@@ -46,8 +46,6 @@ body{
     
     Declaración de la tercera columna creada con un tamaño de 200px
 
-    En este contenedor se omite la fila debido a que no se va a utilizar
-    
     */    
 
     grid-template-rows: minmax(0,1fr);
@@ -120,11 +118,6 @@ body{
      
 }
 
-.fab{
-    margin-right: 0.5em;
-    /*Margin-right establece que el icono se movera hacia la derecha 0.5 em*/
-}
-
     .informacion_general_generos{
         display: flex;
         /*Formato de diseño flex*/
@@ -149,11 +142,8 @@ body{
         display: flex;
         /*Formato de diseño flex*/
         flex-direction: column; 
-        /*direccion del contenido en columna este se vuelve padre 
-        cuando contiene los hijos
-        Si se colocan rows todo el contenido se invertira
-        */
-        align-items: center;
+        /*direccion del contenido en columna*/
+        align-items: start;
         /*Center permite que el contenido del div se situe en medio*/
         justify-content: center;
        
@@ -197,5 +187,92 @@ body{
     En este contenedor se omite la fila debido a que no se va a utilizar
     
     */    
+    background-color: black;
+    grid-template-rows: minmax(0,1fr);
+    
  
+}
+
+.secundario_acciones_album{
+    display: grid;
+    /*Formato de diseño grid*/
+    grid-template-columns: 120px 50px 30px;
+
+    /* Declaración de una columna con un tamaño de 120px.
+       Declaración de una columna con un tamaño de 40px
+       Declaración de una columna con un tamaño de 40px
+   */
+
+    grid-template-rows: minmax(0, 1fr);
+     /* 
+    
+     Declaración de la segunda fila con un tamaño de 1 fracción.
+    El cual, especifíca el tamaño de una fila creada de forma implícita. con las 
+    medidas restantes del contenedor
+    
+    */
+    
+
+    justify-content: space-evenly;
+
+ 
+}
+
+.album_portada{
+   
+        display: flex;
+        /*Formato de diseño flex*/
+        flex-direction: column;
+        /*direccion del contenido en columna*/
+        align-items: center;
+        /*Center permite que el div se situe en medio*/
+        justify-content: center;
+        /*Center permite que el contenido del div se situe en medio*/
+    }
+
+
+.album_foto{
+    width: 90px;
+    /*El contenedor de la foto tendrá 100 px de ancho*/
+    height: 90px;
+    /*El contenedor de la foto tendrá 100 px de altura*/
+
+}
+
+.album_img{
+    
+    height: 100%;
+    /*la foto tendrá 100 px de ancho*/
+    width: 100%;
+     /*la foto tendrá 100 px de altura*/
+    object-fit: contain;
+    /*Object fit nos permite ajustar la imagen al contenedor del div*/
+}
+
+.fuente_album{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+.fuente{
+    color: white;
+    font-size: x-small;
+}
+
+
+.me_gusta{
+   
+    display: flex;
+    /*Formato de diseño flex*/
+    flex-direction: column;
+    /*direccion del contenido en columna*/
+    align-items: center;
+    /*Center permite que el div se situe en medio*/
+    justify-content: center;
+    /*Center permite que el contenido del div se situe en medio*/
+}
+
+.columna5, .columna6{
+ background-color: yellow;
 }
