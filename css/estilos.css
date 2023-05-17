@@ -1,0 +1,201 @@
+body{
+    margin: 0px; /* siempre quitar el margen, y no lleva punto al inicio, ningun selector de etiqueta no lleva punto , todo lo que sea una etiqueta no lleva */
+    font-family: 'Raleway', sans-serif;
+    color: #B3B3B3;
+}
+
+
+.contenedor_principal{
+    /*Contenedor principal (1 columna / 2 filas) */
+    display: grid;
+    /*Formato de diseño grid*/
+    grid-template-columns: minmax(0, 1fr); 
+    /* Declaración de una columna con un tamaño de 1 fracción.
+    El cual, especifíca el tamaño de una columna creada de forma implícita. con las 
+    medidas restantes del contenedor*/
+    
+    grid-template-rows: minmax(0, 1fr) 100px;
+
+    /* 
+    Declaración de una fila con un tamaño de 1 fracción.
+    El cual, especifíca el tamaño de una fila creada de forma implícita. con las 
+    medidas restantes del contenedor
+    
+    Declaración de la segunda fila con un tamaño de 100 px
+    
+    */
+
+    background-color: yellowgreen;
+    height: 100vh; 
+    /*virtual height de 100* Toma la altura completa de la pantalla 
+     Esta es una unidad css relativas a la ventana gráfica del navegador
+    */
+}
+
+    .contenedor_principal_informacion{
+    /*Contenedor principal información (3 columnas / 0 filas) */
+    display: grid;
+    /*Formato de diseño grid*/
+    grid-template-columns: 200px minmax(0, 1fr) 200px;
+    /* 
+    Declaración de una columna con un tamaño de 200px.
+    
+    Declaración de una columna con un tamaño de 1 fracción.
+    El cual, especifíca el tamaño de una columna creada de forma implícita. con las 
+    medidas restantes del contenedor
+    
+    Declaración de la tercera columna creada con un tamaño de 200px
+
+    En este contenedor se omite la fila debido a que no se va a utilizar
+    
+    */    
+
+    grid-template-rows: minmax(0,1fr);
+
+    /*Declaración de una fila con un tamaño de 1 fracción.
+    El cual, especifíca el tamaño de una fila creada de forma implícita. con las 
+    medidas restantes del contenedor
+
+    Se debe declarar esta fila para que las columnas tengan un limite al final,
+
+    
+    */
+    
+}
+.contenedor_informacion_general{
+    display: grid;
+    /*Formato de diseño grid*/
+    grid-template-columns: minmax(0, 1fr);
+
+    /* Declaración de una columna con un tamaño de 1 fracción.
+    El cual, especifíca el tamaño de una columna creada de forma
+    implícita. con las 
+    medidas restantes del contenedor*/
+
+    grid-template-rows: 150px minmax(0, 1fr) 80px;
+     /* 
+    
+    Declaración de la primera fila con un tamaño de 150px
+
+     Declaración de la segunda fila con un tamaño de 1 fracción.
+    El cual, especifíca el tamaño de una fila creada de forma implícita. con las 
+    medidas restantes del contenedor
+    
+    Declaración de la tercera fila con un tamaño de 80 px
+    
+    */
+    background-color: black;
+}
+
+.informacion_general_opciones{
+
+    /*En este contenedor usaremos los primeros 150px*/
+    
+        display: flex;
+        /*Formato de diseño flex*/
+        flex-direction: column;
+
+        /*Flex-direction especifica cómo colocar los objetos flexibles en 
+        el contenedor definiendo el eje principal y la dirección (normal o al revés). 
+        
+        flex-direction: column. Es  La dirección en la que se apilas las líneas de texto */
+
+        justify-content: space-evenly;
+
+        /*La propiedad justify-content de Flexbox nos va a permitir definir cómo se deben
+         alinear los elementos o flex-items que están dentro del contenedor flex
+         
+         space-evenly
+         Los elementos se repartirán el espacio sobrante de su 
+         contenedor de igual manera a todos sus costados. Es decir que habrá el mismo espacio al inicio y al final que en 
+         el medio de los elementos.
+         */
+
+        margin: 0.5em;
+        /*Esta es la sepración que existirá entre cada div
+        usamos la medioda de 0.5em que es una unidad de medida relativa. esta se adapta con
+        el css grid
+        */
+
+     
+}
+
+.fab{
+    margin-right: 0.5em;
+    /*Margin-right establece que el icono se movera hacia la derecha 0.5 em*/
+}
+
+    .informacion_general_generos{
+        display: flex;
+        /*Formato de diseño flex*/
+        flex-direction: column; 
+        /*direccion del contenido en columna este se vuelve padre 
+        cuando contiene los hijos
+        Si se colocan rows todo el contenido se invertira
+        */
+        overflow-y: auto; /* para elementos verticales es y */
+        /*Overflow nos permite generar un scroll a partir de la información
+        contenida en el contendeor*/
+        justify-content: space-between;
+        /*Space-between nos permitirá generar un espacio entre cada contenedor*/
+        margin: 0.5em;
+        /*Esta es la sepración que existirá entre cada div
+        usamos la medioda de 0.5em que es una unidad de medida relativa. esta se adapta con
+        el css grid
+        */
+    }
+
+    .informacion_general_lista{
+        display: flex;
+        /*Formato de diseño flex*/
+        flex-direction: column; 
+        /*direccion del contenido en columna este se vuelve padre 
+        cuando contiene los hijos
+        Si se colocan rows todo el contenido se invertira
+        */
+        align-items: center;
+        /*Center permite que el contenido del div se situe en medio*/
+        justify-content: center;
+       
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.contenedor_secundario_acciones{
+    display: grid;
+    grid-template-columns: 200px minmax(0, 1fr) 200px;
+    /* 
+    Declaración de una columna con un tamaño de 200px.
+    
+    Declaración de una columna con un tamaño de 1 fracción.
+    El cual, especifíca el tamaño de una columna creada de forma implícita. con las 
+    medidas restantes del contenedor
+    
+    Declaración de la tercera columna creada con un tamaño de 200px
+
+    En este contenedor se omite la fila debido a que no se va a utilizar
+    
+    */    
+ 
+}
