@@ -273,6 +273,51 @@ body{
     /*Center permite que el contenido del div se situe en medio*/
 }
 
-.columna5, .columna6{
+.columna5{
  background-color: yellow;
+}
+
+.secundario_acciones_botones{
+    display: grid;
+    /*Formato de diseño grid*/
+    grid-template-columns: 25px 25px 25px 100px 25px;
+
+    /* Declaración de una columna con un tamaño de 120px.
+       Declaración de una columna con un tamaño de 40px
+       Declaración de una columna con un tamaño de 40px
+   */
+
+    grid-template-rows: minmax(0, 1fr);
+     /* 
+    
+     Declaración de la segunda fila con un tamaño de 1 fracción.
+    El cual, especifíca el tamaño de una fila creada de forma implícita. con las 
+    medidas restantes del contenedor
+    
+    */
+    
+
+    justify-content: space-evenly;
+
+    
+}
+
+.acciones_botones{
+    display: flex;
+    /*Formato de diseño flex*/
+    flex-direction: column;
+    /*direccion del contenido en columna*/
+    align-items: center;
+    /*Center permite que el div se situe en medio*/
+    justify-content: center;
+    /*Center permite que el contenido del div se situe en medio*/
+}
+
+
+.volumen{
+    width: 90px;
+    height: 5px;
+    background: gray;
+    cursor: pointer;
+    
 }
