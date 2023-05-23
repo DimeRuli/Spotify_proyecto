@@ -273,9 +273,67 @@ body{
     /*Center permite que el contenido del div se situe en medio*/
 }
 
-.columna5{
- background-color: yellow;
+.secundario_acciones_controles{
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-rows: 50px 50px;
 }
+
+.acciones_controles_reproductor{
+    display: grid;
+    grid-template-columns: 150px 60px 60px 60px 60px 60px 150px;
+    grid-template-rows: minmax(0, 1fr);
+    justify-content: space-evenly;
+
+}
+
+.controles_reproductor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+
+
+.acciones_controles_avance{
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-rows: minmax(0, 1fr);
+    justify-content: center;
+
+}
+
+.avance_cancion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.avance{
+    width: 500px;
+    height: 5px;
+    background: gray;
+    cursor: pointer;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .secundario_acciones_botones{
     display: grid;
