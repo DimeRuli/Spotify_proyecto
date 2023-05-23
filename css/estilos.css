@@ -149,10 +149,21 @@ body{
        
     }
 
+.informacion_general_amigos{
+    display: grid;
+    grid-template-columns: minmax(0px, 1fr);
+    grid-template-rows:  100px minmax(0px, 1fr);
+    background-color: black;
+  
+    
+}
 
-
-
-
+.general_amigos_titulo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
 
 
 
